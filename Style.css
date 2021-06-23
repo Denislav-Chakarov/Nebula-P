@@ -1,0 +1,532 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #0d141f;
+  border-radius: 0px 0px 0px 0px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #00727a;
+  border-radius: 0 8px 8px 0;
+}
+.Homepage_Background {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.Logo {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.Logo img {
+  width: 150px;
+  height: 60px;
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+.TourBtn {
+  color: white;
+  padding: 5px 15px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+.TourBtn:hover {
+  background: black;
+  border-radius: 1px solid black;
+  color: white;
+}
+.Disable {
+  margin-right: 6rem;
+  margin-top: 2rem;
+}
+.Disable {
+  color: #fbfcfd;
+  padding: 5px 15px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+.Disable:hover {
+  background: black;
+  border-radius: 1px solid black;
+  color: white;
+}
+
+.Welcome {
+  color: white;
+  margin-left: 6rem;
+  margin-top: 10rem;
+  font-size: 1.5rem;
+}
+
+.side-bar {
+  width: 4rem;
+  height: 100vh;
+  background: linear-gradient(#00545d, #000729);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.side-bar img {
+  display: block;
+  width: 2.5rem;
+  margin: 3rem auto 0;
+  cursor: pointer;
+}
+
+.usful-links {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.ArrowsDown {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  animation: FloatArrow 3s infinite;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.ArrowsDown:hover {
+  color: black;
+  cursor: pointer;
+}
+@keyframes FloatArrow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.Burger {
+  margin-top: 3rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.Burger > div {
+  margin: 10px;
+  transition: all 0.3s;
+}
+.line1 {
+  width: 2.5rem;
+  height: 2px;
+  background-color: #a2d4b6;
+}
+.line2 {
+  width: 2.5rem;
+  height: 2px;
+  background-color: #a2d4b6;
+}
+.line3 {
+  width: 2rem;
+  height: 2px;
+  background-color: #a2d4b6;
+}
+
+.Burger:hover > div {
+  background-color: black;
+}
+
+.nav-bar {
+  background-image: linear-gradient(#43c6ac, #003d2e);
+  width: 1000px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0, 100% 100%, 100% 100%, 0 100%);
+  transform: translateX(-100%);
+  transition: all 1s;
+  z-index: 2;
+}
+.nav-bar-active {
+  transform: translateX(0%);
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh;
+  width: 20%;
+  align-items: center;
+  margin-top: 8rem;
+}
+.nav-links li {
+  color: black;
+  list-style: none;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1;
+  opacity: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+.nav-links li a:hover {
+  color: white;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.darkness {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+.darkness-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.stopScrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Bubbles img {
+  width: 3.3rem;
+  animation: bubble 7s linear infinite;
+}
+.Bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -3.5rem;
+}
+.Bubbles-active {
+  width: 0%;
+  display: none;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-37rem);
+    opacity: 0;
+  }
+}
+
+.Bubbles img:nth-child(1) {
+  animation-delay: 2s;
+}
+.Bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.Bubbles img:nth-child(3) {
+  animation-delay: 3s;
+}
+.Bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.Bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+.Bubbles img:nth-child(6) {
+  animation-delay: 6s;
+}
+.Bubbles img:nth-child(7) {
+  animation-delay: 7s;
+}
+
+/* Second Content Page CSS */
+
+.SecondContent {
+  width: 100%;
+  min-height: 140vh;
+  height: auto;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #00493d 0%, #070066 100%);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.StartP {
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+}
+.SubImages {
+  width: 450px;
+  height: 520px;
+}
+.SubCol {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+  background: linear-gradient(#004638, #000e5c);
+  height: 32.5rem;
+}
+.SubCol strong {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.SubCol p {
+  color: white;
+}
+
+.NavCols img {
+  width: 100%;
+  height: 17.5rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.NavText {
+  color: black;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.MidBorder {
+  background-color: #dfe5e7e7;
+}
+.MidBorder p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.DownBorder {
+  width: 100%;
+}
+.ExploreBtn {
+  background: linear-gradient(#00727a, #00493d);
+  width: inherit;
+  display: inline-block;
+  border: none;
+  padding: 5px;
+}
+.ExploreBtn::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width 0.3s;
+}
+.ExploreBtn:hover::after {
+  width: 100%;
+}
+.ExploreBtn:hover {
+  color: white;
+  background: black;
+}
+
+/* Third Content Page */
+
+.ThirdContent {
+  background: linear-gradient(0deg, #000000 0%, #001233 100%);
+  min-height: 140vh;
+  height: auto;
+}
+.DeepImage {
+  width: 450px;
+  height: 370px;
+  margin-top: 5rem;
+  animation: FloatImage 5s infinite;
+}
+.DeepImage3 {
+  width: 450px;
+  height: 450px;
+  margin-top: 3rem;
+  animation: FloatImage 5s infinite;
+}
+@keyframes FloatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.JellyDes {
+  width: 100%;
+  position: relative;
+}
+.JellyDes h2 {
+  margin-top: 5rem;
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+.JellyDes h4 {
+  color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+.SeeMoreBtn {
+  position: absolute;
+  justify-content: center;
+  right: 40%;
+  left: 40%;
+  background: #00545d;
+  color: white;
+  border: 2px solid #00545d;
+  border-radius: 12px;
+  padding: 5px 20px;
+}
+
+.ThankYou {
+  background: black;
+  color: white;
+  text-align: center;
+  border-top: 3px solid black;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.SubmarineImg {
+  background: black;
+  width: 130px;
+  height: 70px;
+  bottom: -7rem;
+  right: -3rem;
+  position: absolute;
+  animation: SubmarineFloating 20s linear infinite;
+}
+
+@keyframes SubmarineFloating {
+  0% {
+    transform: translateX(15rem);
+  }
+  100% {
+    transform: translateX(-86rem);
+  }
+}
+@keyframes SubmarineFloatingMobile {
+  0% {
+    transform: translateX(7rem);
+  }
+  100% {
+    transform: translateX(-33rem);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .Welcome {
+    margin-left: 1rem;
+    font-size: 0.7rem;
+  }
+  .nav-bar {
+    width: 340px;
+  }
+  .nav-links {
+    width: 10%;
+  }
+  .Logo img {
+    margin-left: 0;
+  }
+  .social-links {
+    display: none;
+  }
+  .usful-links {
+    display: none;
+  }
+  .side-bar {
+    height: 15vh;
+    right: 10px;
+  }
+  .SubImages {
+    max-width: 370px;
+    height: 420px;
+  }
+  .NavCols {
+    padding-bottom: 2rem;
+  }
+  .DeepImage {
+    margin-left: 0;
+    padding-left: 0;
+    width: 370px;
+    height: 390px;
+  }
+  .SeeMoreBtn {
+    right: 37%;
+    left: 37%;
+  }
+  .DeepImage3 {
+    margin-left: 0;
+    padding-left: 0;
+    width: 370px;
+    height: 390px;
+  }
+  .SubmarineImg {
+    animation: SubmarineFloatingMobile 8s linear infinite;
+  }
+}
