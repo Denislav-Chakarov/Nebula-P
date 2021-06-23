@@ -1,211 +1,243 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>My Webiste</title>
-      <meta name="description" content="This is just a test">
-      <meta charset="utf-8">
-      <meta name="robots" content="index,follow">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="/Style.css">
-      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-      
-  </head>
-  
-  <body>
-      <div class="Homepage_Background">
-          <div class="darkness" id="dark"></div>
-          
-          <div class="Logo">
-              <img src="img/logo.png">
-              <button onclick="DisableBubbles();" class="Disable" id="BubblesDisable" type="button">Disable bubbles</button>
-            </div>
-            <div class="Welcome">
-                <p>Welcome to the</p>
-                <h1>World's deepest knowledge</h1>
-                
-                <button onclick="DiveIn();" class="TourBtn" type="button">Take a tour</button>
-            </div>
-            <div class="side-bar">
-                
-                <div class="Burger" id="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <div class="social-links">
-                    <img src="img/fb.png">
-                    <img src="img/ig.png">
-                    <img src="img/tw.png">
-                </div>
-                <div class="usful-links">
-                    <img src="img/info.png">
-                    <img src="img/share.png">
-                </div>
-            </div>
-            <i onclick="DiveIn();" class="fas fa-angle-double-down ArrowsDown" id="ArrowDown"></i>
-            <div class="nav-bar" id="navBar">
-                 <ul class="nav-links">
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">About Us</a></li>
-                     <li style="margin-left:1rem;"><a href="#">Our Projects</a></li>
-                     <li><a href="#">Our Policy</a></li>
 
-                 </ul>
-            </div>
-            <div class="Bubbles" id="bubbles">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-            </div>
-        </div>
-        <div class="SecondContent" id="SecondContentLocation">
-              <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-12">
-                            <p class="StartP" data-aos="fade-up">The Deep Sea is the largest habitat on the planet, taking up to 95% of the Earth living space, yet it’s also the most unexplored environment despite being one of the most amazing places of the Planet.
+<head>
+    <title>My Webiste</title>
+    <meta name="description" content="This is just a test">
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/rain_weather_water_icon-icons.com_62506.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
-                                We know very little about the Deep ocean and the life it holds due to the depth and the difficulties this creates for scientists. In fact, it has been said that we know more about the surface of the moon than about the deeper Ocean trenches.
-                                
-                                But what exactly is the Deep ocean?  The first 200 meters of the ocean are the open ocean.  Much of the marine life we know of lives here, where there is light.
-                                
-                                Below 200 meters, where there is little light left, you enter the Twilight Zone.  Once you pass 1,000 meters, the water is completely devoid of light, and you have reached the Deep Sea.
-                                
-                                Discover these breathtaking Deep Sea facts to learn more about the depths of the Oceans !</p>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top:4rem;">
-                            <div class="col-12 col-lg-4">
-                                <div class="NavCols" data-aos="fade-up">
-                                  <img src="/DeepSeaImg/jelly.jpg">
-                                  <div class="MidBorder">
-                                      <br>
-                                      <h5 class="NavText">Strange Creatures </h5>
-                                      <br>
-                                    <p>While it may seem as though modern science has knowledge of the vast majority of creatures that call our planet home, the reality is much different. Each year, scientists continue to discover even more species than we ever knew existed.</p>
-                                    <div class="DownBorder">
-                                        <button onclick="DiveIn2();" class="ExploreBtn" type="button"><span style="font-size:1.1rem; font-weight: 500;">Explore</span></button>
-                                    </div>
-                                 </div>
-                                </div>
-                            </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="NavCols" data-aos="fade-up">
-                                <img src="/DeepSeaImg/deepSubmarine.jpg">
-                                <div class="MidBorder">
-                                    <br>
-                                    <h5 class="NavText">Pressure</h5>
-                                    <br>
-                                    <p>In fact, for every 10 meters traveled deeper into the ocean, there are an additional 6.47kg (14.27lbs) of pressure on each square inch of surface. In the deepest point of the Mariana Trench the pressure is 15.750psi</p>
-                                    <div class="DownBorder">
-                                        <button onclick="DiveIn3();" class="ExploreBtn" type="button"><span style="font-size: 1.1rem; font-weight: 500;">Explore</span></button>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="NavCols" data-aos="fade-up">
-                                <img src="/DeepSeaImg/DeepSeaSubmarine.jpg">
-                                <div class="MidBorder">
-                                    <br>
-                                    <h5 class="NavText">Deepest Point</h5>
-                                    <br>
-                                    <p>While a handful of people have bravely scaled Mount Everest, the highest point on earth, even fewer have ever descended to the deepest point. The deepest point of the Mariana Trench is known as the Challenger Deep.</p>
-                                    <div class="DownBorder">
-                                        <button onclick="DiveIn4();" class="ExploreBtn" type="button"><span style="font-size:1.1rem; font-weight: 500;">Explore</span></button>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-              </div>
+</head>
+
+<body>
+    <div class="Homepage_Background">
+        <div class="darkness" id="dark"></div>
+
+        <div class="Logo">
+            <img src="img/logo.png">
+            <button onclick="DisableBubbles();" class="Disable" id="BubblesDisable" type="button">Disable
+                bubbles</button>
         </div>
-        <div class="ThirdContent">
-            <div class="container">
-                <div class="row" id="row1">
-                    <div class="col-12 col-lg-6">
-                        <div data-aos="fade-up">
-                            <img class="DeepImage" src="/DeepSeaImg/Jelly-removebg.png">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="JellyDes" data-aos="fade-up"> 
-                            <h2>Deep Creatures</h2>
-                            <h4>During an expedition in the waters of Puerto Rico, a research team for the National Oceanic and Atmospheric Administration (NOAA) came upon a stunning deep-sea sight: Duobrachium sparksae, a new species of comb jelly. The scientists aboard the vessel reported the specimen as unique based on several factors, including notably long tentacles that seemed to hover near the seafloor and movement similar to that of a “hot air balloon.” This discovery is also the first in which NOAA scientists used only video footage to discover, report and describe a new species.</h4>
-                            <button class="SeeMoreBtn" type="button">See more</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row" id="row2">
-                    <div class="col-12 col-lg-6">
-                        <div data-aos="fade-up">
-                            <img class="DeepImage" src="/DeepSeaImg/109799-removebg-preview.png">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="JellyDes" data-aos="fade-up"> 
-                            <h2>Pressure</h2>
-                            <h4>In order to descend to greater ocean depths, scientists and explorers must use specially designed equipment like remotely operated vehicles (ROVs) and manned submersibles that can operate under extreme pressures.
-                                How extreme? An ROV diving to a depth of 2,000m experiences over 1,270kg (2,800lbs) of force exerted on each square inch of its surface!                       
-                                That means that in the Challenger Deep, the pressure is approximately 1100 times surface pressure !</h4>
-                            <button class="SeeMoreBtn" type="button">See more</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row" id="row3">
-                    <div class="col-12 col-lg-6">
-                        <div data-aos="fade-up">
-                            <img class="DeepImage3" src="/DeepSeaImg/17.png">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="JellyDes" data-aos="fade-up"> 
-                            <h2>Deepest Point</h2>
-                            <h4>Located near Guam, the <span style="font-weight: bold;">Mariana Trench</span> is the deepest known submarine trench. It is also the deepest known location on Earth itself.
-                                The deepest part of the trench is known as the Challenger Deep (36,200 feet deep). It is named after the British Royal Navy survey ship HMS Challenger, whose expedition of 1872–76 made the first recordings of its depth.</h4>
-                            <button class="SeeMoreBtn" type="button">See more</button>
-                        </div>
-                    </div>
-                    
-                </div>
+        <div class="Welcome">
+            <p>Welcome to the</p>
+            <h1>World's deepest knowledge</h1>
+
+            <button onclick="DiveIn();" class="TourBtn" type="button">Take a tour</button>
+        </div>
+        <div class="side-bar">
+
+            <div class="Burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="social-links">
+                <img src="img/fb.png">
+                <img src="img/ig.png">
+                <img src="img/tw.png">
+            </div>
+            <div class="usful-links">
+                <img src="img/info.png">
+                <img src="img/share.png">
             </div>
         </div>
-        <div class="ThankYou">
-            <div class="container">
+        <i onclick="DiveIn();" class="fas fa-angle-double-down ArrowsDown" id="ArrowDown"></i>
+        <div class="nav-bar" id="navBar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li style="margin-left:1rem;"><a href="#">Our Projects</a></li>
+                <li><a href="#">Our Policy</a></li>
+
+            </ul>
+        </div>
+        <div class="Bubbles" id="bubbles">
+            <img src="img/bubble.png">
+            <img src="img/bubble.png">
+            <img src="img/bubble.png">
+            <img src="img/bubble.png">
+            <img src="img/bubble.png">
+            <img src="img/bubble.png">
+            <img src="img/bubble.png">
+        </div>
+    </div>
+    <div class="SecondContent" id="SecondContentLocation">
+        <div class="container">
+            <div class="row">
                 <div class="col-12 col-lg-12">
-                    <br>
-                    <br>
-                    <div data-aos="fade-up">
-                        <h2>Thank you for visiting Nebula</h2>
-                        <h5>Hope you've learned something new about our magnificent Ocean!</h5>
+                    <p class="StartP" data-aos="fade-up">The Deep Sea is the largest habitat on the planet, taking up to
+                        95% of the Earth living space, yet it’s also the most unexplored environment despite being one
+                        of the most amazing places of the Planet.
+
+                        We know very little about the Deep ocean and the life it holds due to the depth and the
+                        difficulties this creates for scientists. In fact, it has been said that we know more about the
+                        surface of the moon than about the deeper Ocean trenches.
+
+                        But what exactly is the Deep ocean? The first 200 meters of the ocean are the open ocean. Much
+                        of the marine life we know of lives here, where there is light.
+
+                        Below 200 meters, where there is little light left, you enter the Twilight Zone. Once you pass
+                        1,000 meters, the water is completely devoid of light, and you have reached the Deep Sea.
+
+                        Discover these breathtaking Deep Sea facts to learn more about the depths of the Oceans !</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top:4rem;">
+                <div class="col-12 col-lg-4">
+                    <div class="NavCols" data-aos="fade-up">
+                        <img src="/DeepSeaImg/jelly.jpg">
+                        <div class="MidBorder">
+                            <br>
+                            <h5 class="NavText">Strange Creatures </h5>
+                            <br>
+                            <p>While it may seem as though modern science has knowledge of the vast majority of
+                                creatures that call our planet home, the reality is much different. Each year,
+                                scientists continue to discover even more species than we ever knew existed.</p>
+                            <div class="DownBorder">
+                                <button onclick="DiveIn2();" class="ExploreBtn" type="button"><span
+                                        style="font-size:1.1rem; font-weight: 500;">Explore</span></button>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <br>
-                    <img class="SubmarineImg" src="DeepSeaImg/submarine-removebg-preview.png">
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="NavCols" data-aos="fade-up">
+                        <img src="/DeepSeaImg/deepSubmarine.jpg">
+                        <div class="MidBorder">
+                            <br>
+                            <h5 class="NavText">Pressure</h5>
+                            <br>
+                            <p>In fact, for every 10 meters traveled deeper into the ocean, there are an additional
+                                6.47kg (14.27lbs) of pressure on each square inch of surface. In the deepest point of
+                                the Mariana Trench the pressure is 15.750psi</p>
+                            <div class="DownBorder">
+                                <button onclick="DiveIn3();" class="ExploreBtn" type="button"><span
+                                        style="font-size: 1.1rem; font-weight: 500;">Explore</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="NavCols" data-aos="fade-up">
+                        <img src="/DeepSeaImg/DeepSeaSubmarine.jpg">
+                        <div class="MidBorder">
+                            <br>
+                            <h5 class="NavText">Deepest Point</h5>
+                            <br>
+                            <p>While a handful of people have bravely scaled Mount Everest, the highest point on earth,
+                                even fewer have ever descended to the deepest point. The deepest point of the Mariana
+                                Trench is known as the Challenger Deep.</p>
+                            <div class="DownBorder">
+                                <button onclick="DiveIn4();" class="ExploreBtn" type="button"><span
+                                        style="font-size:1.1rem; font-weight: 500;">Explore</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-      
-        
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        offset:400,
-        duration:1000,
-        once:true
-    });
+    </div>
+    <div class="ThirdContent">
+        <div class="container">
+            <div class="row" id="row1">
+                <div class="col-12 col-lg-6">
+                    <div data-aos="fade-up">
+                        <img class="DeepImage" src="/DeepSeaImg/Jelly-removebg.png">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="JellyDes" data-aos="fade-up">
+                        <h2>Deep Creatures</h2>
+                        <h4>During an expedition in the waters of Puerto Rico, a research team for the National Oceanic
+                            and Atmospheric Administration (NOAA) came upon a stunning deep-sea sight: Duobrachium
+                            sparksae, a new species of comb jelly. The scientists aboard the vessel reported the
+                            specimen as unique based on several factors, including notably long tentacles that seemed to
+                            hover near the seafloor and movement similar to that of a “hot air balloon.” This discovery
+                            is also the first in which NOAA scientists used only video footage to discover, report and
+                            describe a new species.</h4>
+                        <button class="SeeMoreBtn" type="button">See more</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="row2">
+                <div class="col-12 col-lg-6">
+                    <div data-aos="fade-up">
+                        <img class="DeepImage" src="/DeepSeaImg/109799-removebg-preview.png">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="JellyDes" data-aos="fade-up">
+                        <h2>Pressure</h2>
+                        <h4>In order to descend to greater ocean depths, scientists and explorers must use specially
+                            designed equipment like remotely operated vehicles (ROVs) and manned submersibles that can
+                            operate under extreme pressures.
+                            How extreme? An ROV diving to a depth of 2,000m experiences over 1,270kg (2,800lbs) of force
+                            exerted on each square inch of its surface!
+                            That means that in the Challenger Deep, the pressure is approximately 1100 times surface
+                            pressure !</h4>
+                        <button class="SeeMoreBtn" type="button">See more</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="row3">
+                <div class="col-12 col-lg-6">
+                    <div data-aos="fade-up">
+                        <img class="DeepImage3" src="/DeepSeaImg/17.png">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="JellyDes" data-aos="fade-up">
+                        <h2>Deepest Point</h2>
+                        <h4>Located near Guam, the <span style="font-weight: bold;">Mariana Trench</span> is the deepest
+                            known submarine trench. It is also the deepest known location on Earth itself.
+                            The deepest part of the trench is known as the Challenger Deep (36,200 feet deep). It is
+                            named after the British Royal Navy survey ship HMS Challenger, whose expedition of 1872–76
+                            made the first recordings of its depth.</h4>
+                        <button class="SeeMoreBtn" type="button">See more</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="ThankYou">
+        <div class="container">
+            <div class="col-12 col-lg-12">
+                <br>
+                <br>
+                <div data-aos="fade-up">
+                    <h2>Thank you for visiting Nebula</h2>
+                    <h5>Hope you've learned something new about our magnificent Ocean!</h5>
+                </div>
+                <br>
+                <br>
+                <img class="SubmarineImg" src="DeepSeaImg/submarine-removebg-preview.png">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+            once: true
+        });
     </script>
-        <script src="Javascript.js"></script>
-        
-    </body>
-    
-    
+    <script src="Javascript.js"></script>
+
+</body>
+
+
 
 </html>
